@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Basic Reset & Font */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen.active {
+    display: flex;
+}
+
+/* Main Menu */
+#main-menu h1 {
+    font-size: 3rem;
+    color: #0f0;
+    text-shadow: 3px 3px #f0f;
+}
+
+.player-status {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.player-status div {
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+/* Game Screen */
+#score-board {
+    position: absolute;
+    top: 10px;
+    width: 95%;
+    max-width: 800px; /* Match canvas width */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+#game-canvas {
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+/* Result Screen */
+#result-screen h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#p1-start-btn.ready, #p2-start-btn.ready {
+    background-color: #0f0;
+    color: #000;
+    text-shadow: none;
+}

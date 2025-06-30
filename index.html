@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Python Clash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu" class="screen active">
+        <h1>Pixel Python Clash</h1>
+        <div class="player-status">
+            <div id="player1-status">
+                <p>PLAYER 1</p>
+                <button id="p1-start-btn">READY</button>
+            </div>
+            <div id="player2-status">
+                <p>PLAYER 2 (ENEMY)</p>
+                <button id="p2-start-btn">READY</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-screen" class="screen">
+        <div id="score-board">
+            <span id="player1-score">P1: 0</span>
+            <span id="player2-score">P2: 0</span>
+        </div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+
+    <div id="result-screen" class="screen">
+        <h2 id="winner-message"></h2>
+        <p>30秒後に選択肢が有効になります</p>
+        <div>
+            <button id="rematch-btn" disabled>再マッチ</button>
+            <button id="back-to-menu-btn" disabled>メインメニューへ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
